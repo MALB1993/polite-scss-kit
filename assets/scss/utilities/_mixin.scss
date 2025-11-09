@@ -1,0 +1,59 @@
+/* ================================================
+   Responsive Breakpoints – Mobile-First Approach
+   ------------------------------------------------
+   mobile        : 0px     → 599.98px
+   tablet        : 600px   → 899.98px
+   desktop       : 900px   → 1199.98px
+   large-desktop : 1200px  → ∞
+   ================================================ */
+
+@mixin respond-to($breakpoint) {
+  // Mobile devices (up to 599.98px)
+  @if $breakpoint == mobile {
+    @media (max-width: 599.98px) { @content; }
+  }
+
+  // Tablet devices (600px to 899.98px)
+  @else if $breakpoint == tablet {
+    @media (min-width: 600px) and (max-width: 899.98px) { @content; }
+  }
+
+  // Desktop (small to medium screens: 900px to 1199.98px)
+  @else if $breakpoint == desktop {
+    @media (min-width: 900px) and (max-width: 1199.98px) { @content; }
+  }
+
+  // Large desktop and above (1200px and up)
+  @else if $breakpoint == large-desktop {
+    @media (min-width: 1200px) { @content; }
+  }
+}
+
+
+/* ================================================
+   Desktop-First Responsive Breakpoints
+   ------------------------------------------------
+   large-desktop : 1200px  → ∞           (Default)
+   desktop       : 900px   → 1199.98px
+   tablet        : 600px   → 899.98px
+   mobile        : 0px     → 599.98px
+   
+
+@mixin respond-down($breakpoint) {
+  // Mobile: up to 599.98px
+  @if $breakpoint == mobile {
+    @media (max-width: 599.98px) { @content; }
+  }
+
+  // Tablet: up to 899.98px
+  @else if $breakpoint == tablet {
+    @media (max-width: 899.98px) { @content; }
+  }
+
+  // Desktop: up to 1199.98px
+  @else if $breakpoint == desktop {
+    @media (max-width: 1199.98px) { @content; }
+  }
+}
+
+================================================ */
