@@ -27,5 +27,9 @@
   "bugs": {
     "url": "https://github.com/MALB1993/polite-scss-kit/issues"
   },
-  "homepage": "https://github.com/MALB1993/polite-scss-kit#readme"
+  "homepage": "https://github.com/MALB1993/polite-scss-kit#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.93.3"
+  }
 }
