@@ -1,16 +1,22 @@
 // base
 @import "./base/reset";
+@import "./base/typography";
+
+// abstracts
+@import './abstracts/mixin';
+@import './abstracts/variables';
 
 
 // utilities
-@import "./utilities/variables";
 @import "./utilities/function";
 @import "./utilities/color";
-@import "./utilities/font";
-@import "./utilities/mixin";
 
+// Import layouts
+@import './layouts/header';
+@import './layouts/footer';
 
-// components
+// components 
+@import "./components/cart";
 
 body{
     background-color: $secundry-color;
