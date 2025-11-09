@@ -1,0 +1,30 @@
+{
+  "name": "polite-scss-kit",
+  "version": "1.0.0",
+  "description": "Polite UI Kit with SCSS – Modular, Educational & Customizable",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MALB1993/polite-scss-kit.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "ui-kit",
+    "polite-design",
+    "web-design",
+    "frontend",
+    "css",
+    "template",
+    "boilerplate"
+  ],
+  "author": "MostafaAlaeddin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MALB1993/polite-scss-kit/issues"
+  },
+  "homepage": "https://github.com/MALB1993/polite-scss-kit#readme"
+}
